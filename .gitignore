@@ -3,3 +3,5 @@ Gemfile.lock
 .DS_Store
 cscope.*
 tags
+pkg
+*.gem

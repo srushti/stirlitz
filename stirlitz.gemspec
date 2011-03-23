@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.version = Stirlitz::Version::STRING
   s.platform = Gem::Platform::RUBY
   s.authors = ["Srushti Ambekallu", "Niranjan Paranjape"]
-  s.email = "srushti@c42.in"
-  s.homepage = "http://github.com/srushti/stirlitz"
+  s.email = "opensource@c42.in"
+  s.homepage = "http://github.com/c42/stirlitz"
   s.summary = "stirlitz-#{Stirlitz::Version::STRING}"
   s.description = "Test spy extension to rspec-mocks"
 

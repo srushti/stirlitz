@@ -6,7 +6,9 @@ A Test Spy extension to rspec-mocks.
 
   gem install stirlitz
 
+
 or add following in your Gemfile
+
 
   gem 'stirlitz', :group => :test
   
