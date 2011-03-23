@@ -37,10 +37,19 @@ module Stirlitz
       end
 
       def failure_message_for_should
-        "#{@expected} should have been called on #{@actual.inspect}"
+        if @args
+          "#{@expected} should have been called on #{@actual.inspect} with #{@args.inspect}, but #{@actual.received_message?(@expected) ? ' was called with other arguments' : 'wasn\'t'}"
+        else
+          "#{@expected} should have been called on #{@actual.inspect}. but wasn't"
+        end
       end
 
       def failure_message_for_should_not
+        if @args
+          "#{@expected} should not have been called on #{@actual.inspect} with #{@args.inspect}, but was"
+        else
+          "#{@expected} should not have been called on #{@actual.inspect}. but was"
+        end
         "#{@expected} should not have been called on #{@actual.inspect}"
       end
     end
