@@ -5,24 +5,24 @@ A Test Spy extension to rspec-mocks.
 == Installing
 
   gem install stirlitz
-  
+
   or add following in your Gemfile
-  
+
   gem 'stirlitz', :group => :test
   
 == Examples
 
   With Stirlitz installed you can verify your mocks post calls
-  
+
   it "lets me know if a call had been made" do
     a_spy = spy(:spy)
     a_spy.a_method
     a_spy.should have_received(:a_method)
     a_spy.should_not have_received(:no_method)
   end
-  
+
   It is also possible to verify the arguments passed while method invocation
-  
+
   it "lets me know if certain arguments were used" do
     a_spy = spy(:spy)
     a_spy.a_method(10, 20)
