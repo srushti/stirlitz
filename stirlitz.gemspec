@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name = "stirlitz"
   s.version = Stirlitz::Version::STRING
   s.platform = Gem::Platform::RUBY
-  s.authors = ["Srushti Ambekallu"]
+  s.authors = ["Srushti Ambekallu", "Niranjan Paranjape"]
   s.email = "srushti@c42.in"
   s.homepage = "http://github.com/srushti/stirlitz"
   s.summary = "stirlitz-#{Stirlitz::Version::STRING}"
@@ -22,8 +22,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_path = "lib"
   
-  s.add_development_dependency "rspec", ["~> 2.5.0"]
-  
+  s.add_runtime_dependency "rspec", ["~> 2.5.0"]
   s.add_runtime_dependency "rspec-mocks", ["~> 2.5.0"]
 end
 
