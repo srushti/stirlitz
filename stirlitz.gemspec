@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-require "stirlitz/mocks/version"
+require "stirlitz/version"
 
 Gem::Specification.new do |s|
   s.name = "stirlitz"
-  s.version = Stirlitz::Mocks::Version::STRING
+  s.version = Stirlitz::Version::STRING
   s.platform = Gem::Platform::RUBY
   s.authors = ["Srushti Ambekallu"]
   s.email = "srushti@c42.in"
   s.homepage = "http://github.com/srushti/stirlitz"
-  s.summary = "stirlitz-#{Stirlitz::Mocks::Version::STRING}"
+  s.summary = "stirlitz-#{Stirlitz::Version::STRING}"
   s.description = "Test spy extension to rspec-mocks"
 
   s.rubygems_version = "1.3.7"
@@ -21,5 +21,9 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [ "README.md" ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_path = "lib"
+  
+  s.add_development_dependency "rspec", ["~> 2.5.0"]
+  
+  s.add_runtime_dependency "rspec-mocks", ["~> 2.5.0"]
 end
 
