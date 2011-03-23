@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rspec'
 require 'rspec/mocks'
+
 module Stirlitz
 end
  
