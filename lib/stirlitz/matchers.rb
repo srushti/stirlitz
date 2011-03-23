@@ -37,11 +37,11 @@ module Stirlitz
       end
 
       def failure_message_for_should
-        "#{@actual} should have been called on #{@expected.inspect}"
+        "#{@expected} should have been called on #{@actual.inspect}"
       end
 
       def failure_message_for_should_not
-        "#{@actual} should not have been called on #{@expected.inspect}"
+        "#{@expected} should not have been called on #{@actual.inspect}"
       end
     end
   end

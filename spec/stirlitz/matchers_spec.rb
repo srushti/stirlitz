@@ -16,5 +16,13 @@ module Stirlitz
       a_spy.a_method(10, 20)
       a_spy.should have_received(:a_method).with(10, 20)
     end
+
+    it "fails when the method is called with different arguments" do
+      a_spy = spy
+      a_spy.a_method(30)
+      lambda do
+        a_spy.should have_received(:a_method).with(40)
+      end.should raise_error
+    end
   end
 end
