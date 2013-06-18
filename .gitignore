@@ -5,3 +5,4 @@ cscope.*
 tags
 pkg
 *.gem
+bin/
