@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.description = "Test spy extension to rspec-mocks"
 
   s.rubygems_version = "1.3.7"
-  s.rubyforge_project = "stirlitz"
+  #s.rubyforge_project = "stirlitz"
 
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {spec,features}/*`.split("\n")
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [ "README.rdoc" ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_path = "lib"
-  
+
   s.add_runtime_dependency "rspec", ["~> 2.5.0"]
   s.add_runtime_dependency "rspec-mocks", ["~> 2.5.0"]
 end
